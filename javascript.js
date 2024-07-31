@@ -51,6 +51,9 @@ function callback(event) {
                 return;
             }
             str_values = addImplicitMultiplication(p.innerHTML);
+            if(p.innerHTML == ''){
+                return p2.innerHTML = ''
+            }
             p2.innerHTML = eval(str_values);
             break;
 
